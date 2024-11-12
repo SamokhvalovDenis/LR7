@@ -1,0 +1,28 @@
+.block {
+    padding: 20px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.table-cell {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+.active {
+    background-color: red;
+    color: white;
+}
+table {
+    border-collapse: collapse;
+}
+header{
+    text-align: center;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM та події</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Лабораторна робота №2. Javascript</h1>
+        <p>Пастушок Денис Олександрович</p>
+        <p>КН-31(3)</p>
+        <p>Варіант №4</p>
+    </header>
+
+    <main>
+        <h2>Завдання №1</h2>
+        <p>
+            Дано блок з кнопкою 'закрити блок'. При натисканні на цю кнопку блок <br>
+            повинен зникнути з форми. Кнопка розміщується всередині блоку і повинна <br>
+            зникнути разом з ним. Блоків може бути будь-яка кількість, допускається щоб <br>
+            один з блоків був всередині іншого. Кожен блок закриває своя кнопка. <br>
+        </p>
+        <h3>Блоки з кнопками для закриття</h3>
+        <div class="block">
+            <button class="close-btn">Закрити блок</button>
+            Блок 1
+        </div>
+        <div class="block">
+            <button class="close-btn">Закрити блок</button>
+            Блок 2
+            <div class="block">
+                <button class="close-btn">Закрити блок</button>
+                Внутрішній блок
+            </div>
+        </div>
+    
+        <h2>Завдання №2</h2>
+        <p>
+            Дана таблиця з числами. При натисканні на комірку, вона <br>
+            активується і стає червоного кольору. Активувати можна багато комірок. Під <br>
+            таблицею кнопка. При натисканні цієї кнопки в абзац нижче виведіть суму <br>
+            активованих комірок. Реалізуйте також кнопку "скинути активовані комірки". <br>
+        </p>
+        <h3>Таблиця з числами</h3>
+        <table>
+            <tr>
+                <td class="table-cell">5</td>
+                <td class="table-cell">10</td>
+                <td class="table-cell">15</td>
+            </tr>
+            <tr>
+                <td class="table-cell">20</td>
+                <td class="table-cell">25</td>
+                <td class="table-cell">30</td>
+            </tr>
+            <tr>
+                <td class="table-cell">35</td>
+                <td class="table-cell">40</td>
+                <td class="table-cell">45</td>
+            </tr>
+        </table>
+        <button id="calculate-sum">Порахувати суму активованих комірок</button>
+        <button id="reset-cells">Скинути активовані комірки</button>
+        <p>Сума: <span id="sum-output">0</span></p>
+    </main>
+    
+
+    <script src="script.js"> </script>
+
+    </body>
+</html>
